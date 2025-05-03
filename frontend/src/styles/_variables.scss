@@ -1,0 +1,106 @@
+$primary : #3E2723;
+$primary-hover : #573631;
+$secondary : #B88B4A;
+$accent : #F3E5AB;
+$main-bg : #ebdfd7;
+$light-bg:#f2eae5;
+$border-color:#e1d6ce;
+$box-bg:#e1d6ce;
+$purple:#d398e7;
+$peach:#e89271;
+$blue:#70a1e5;
+$hover-blue : #3567ad;
+$orange:#f0c274;
+$dark-orange:#e76533;
+$f-black:#213547;
+$green:#1a932e;
+$red:#ee211d;
+$hover-red:#c21512;
+
+
+
+$font-regular:'Quicksand';
+$font-bold: 'Quicksand-Bold';
+$font-semibold : 'Quicksand-SemiBold';
+
+@mixin f-box{
+    border-radius: 15px;
+    background-color: $box-bg;
+}
+
+
+@font-face {
+    font-family: 'Quicksand-Light';
+    src: url('../assets/fonts/Quicksand-Light.woff2') format('woff2'),
+        url('../assets/fonts/Quicksand-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('../assets/fonts/Quicksand-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Quicksand-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('../assets/fonts/Quicksand-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Quicksand-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand-SemiBold';
+    src: url('../assets/fonts/Quicksand-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/Quicksand-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../assets/fonts/Quicksand-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Quicksand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.f-font-bold{
+    font-family: $font-bold;
+}
+.blue-color{
+    color:$blue;
+    &:hover{
+        color:$hover-blue;
+    }
+}
+.red-color{
+    color:$red;
+    &:hover{
+        color:$hover-red;
+    }
+}
+.peach{
+    background-color: $peach !important;
+}
+.blue{
+    background-color: $blue !important;
+}
+.orange{
+    background-color: $orange !important;
+}
+.red{
+    background-color: $red !important;
+}
+.primary{
+    color:$primary;
+}
